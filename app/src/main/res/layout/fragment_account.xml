@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.account.AccountFragment">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--  Card 1  -->
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/card1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/food"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/number1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--  Card 2  -->
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/card2"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/transport"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/number2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--  Card 3  -->
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/card3"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/entertainment"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/number3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--  Card 4  -->
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/card4"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/necessities"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/number4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--  Card 5  -->
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/card5"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/others"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/number5"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

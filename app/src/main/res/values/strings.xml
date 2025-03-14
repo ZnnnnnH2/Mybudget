@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mybudget2</string>
+    <string name="title_home">主页</string>
+    <string name="title_bill">固定扣款</string>
+    <string name="title_account">记一笔</string>
+
+    <string name="food">三餐</string>
+    <string name="transport">交通</string>
+    <string name="entertainment">娱乐</string>
+    <string name="necessities">必需品</string>
+    <string name="others">其他</string>
+    <string name="bill">bill</string>
+    <string name="enter">Enter!</string>
+    <string name="reset">新的一月</string>
+    <string name="init">重置储蓄</string>
+    <string name="refresh">refresh</string>
+
+</resources>
