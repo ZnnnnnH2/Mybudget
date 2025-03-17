@@ -5,8 +5,12 @@ import android.content.Context
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-
-class AccountViewModel(application: Application) : AndroidViewModel(application) {
+import com.example.mybudget2.data.AppContainer
+import com.example.mybudget2.data.AppDateContainer
+import com.example.mybudget2.data.History
+//
+class AccountViewModel(application: Application) :
+    AndroidViewModel(application) {
     private val balance = arrayOf(1200F, 30F, 100F, 200F, 300F)
     private val sharedPre = application.getSharedPreferences("myBank", Context.MODE_PRIVATE)
     private val item = arrayOf("food", "transport", "entertainment", "necessity", "others")
@@ -71,11 +75,32 @@ class AccountViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
-    fun update(){
+    fun update() {
         _food.value = sharedPre.getFloat("food", balance[0])
         _transport.value = sharedPre.getFloat("transport", balance[1])
         _entertainment.value = sharedPre.getFloat("entertainment", balance[2])
         _necessities.value = sharedPre.getFloat("necessity", balance[3])
         _others.value = sharedPre.getFloat("others", balance[4])
+    }
+
+    val historyRepo = AppDateContainer(application as Context).historyRepository
+    private val _id = MutableLiveData<Int>().apply {
+        value = sharedPre.getInt("ID",0)
+    }
+    val id: LiveData<Int> = _id
+    fun updateId(newId: Int){
+        _id.value = newId
+        sharedPre.edit().apply {
+            putInt("ID", _id.value!!)
+            apply()
+        }
+    }
+    suspend fun tryInsert(data:String, amount: Float, pattern : String){
+        val iidd = id.value?.plus(1)
+        updateId(iidd!!)
+        insertHistory(iidd,data,amount, pattern)
+    }
+    suspend fun insertHistory(id:Int,data:String,amount: Float, pattern: String) {
+        historyRepo.insertHistory(History(id,data,amount, pattern))
     }
 }

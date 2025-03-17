@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Mybudget2</string>
     <string name="title_home">主页</string>
-    <string name="title_bill">固定扣款</string>
+    <string name="title_history">历史</string>
     <string name="title_account">记一笔</string>
 
     <string name="food">三餐</string>

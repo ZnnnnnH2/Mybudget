@@ -12,9 +12,9 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_bill"
-        android:name="com.example.mybudget2.ui.bill.BillFragment"
-        android:label="@string/title_bill"
+        android:id="@+id/navigation_history"
+        android:name="com.example.mybudget2.ui.history.HistoryFragment"
+        android:label="@string/title_history"
         tools:layout="@layout/fragment_account" />
 
     <fragment
