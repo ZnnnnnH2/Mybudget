@@ -199,9 +199,9 @@ class AccountFragment : Fragment() {
         _binding = null
     }
 
-    private suspend fun insertHistory(amount: Float, pattern: String) {
+    private suspend fun insertHistory(amount: Float, pattern: String, tF: Int = -1) {
         val currentDateTime = LocalDateTime.now()
         val accountViewModel = ViewModelProvider(this).get(AccountViewModel::class.java)
-        accountViewModel.tryInsert(currentDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")), amount, pattern)
+        accountViewModel.tryInsert(currentDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")), amount, pattern, tF)
     }
 }

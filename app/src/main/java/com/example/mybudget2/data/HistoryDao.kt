@@ -14,6 +14,6 @@ interface HistoryDao {
     @Query("SELECT * from history WHERE id = :id")
     fun getHistory(id: Int): Flow<History>
 
-    @Query("SELECT * from history ORDER BY data")
+    @Query("SELECT * from history ORDER BY id DESC")
     fun getAllItems(): Flow<List<History>>
 }

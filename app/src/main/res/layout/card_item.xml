@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/card"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/dada"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pattern"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="22sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -23,6 +23,4 @@ abstract class HistoryDatabase : RoomDatabase() {
             }
         }
     }
-
-
 }

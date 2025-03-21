@@ -95,12 +95,12 @@ class AccountViewModel(application: Application) :
             apply()
         }
     }
-    suspend fun tryInsert(data:String, amount: Float, pattern : String){
+    suspend fun tryInsert(data:String, amount: Float, pattern : String, tF: Int){
         val iidd = id.value?.plus(1)
         updateId(iidd!!)
-        insertHistory(iidd,data,amount, pattern)
+        insertHistory(iidd,data,amount, pattern, tF)
     }
-    suspend fun insertHistory(id:Int,data:String,amount: Float, pattern: String) {
-        historyRepo.insertHistory(History(id,data,amount, pattern))
+    suspend fun insertHistory(id:Int,data:String,amount: Float, pattern: String, tF: Int) {
+        historyRepo.insertHistory(History(id,data,amount*tF, pattern))
     }
 }
